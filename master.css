@@ -1,0 +1,195 @@
+/*CSS for links  pre click*/
+a:link {
+    color: #0e9aa7;
+}
+
+/*CSS Links clicked*/
+a:visited {
+  color: #9818d6;
+}
+
+a:hover {
+  color: #43d8c9;
+}
+
+/* CSS for the body */
+body {
+  background-color: #ffecc7;
+  margin: 0;
+  font-size: 1.29em;
+}
+
+/*CSS for h1*/
+h1 {
+  color: #ec823a;
+  text-decoration: underline;
+  font-family: 'Cookie', cursive;
+  font-size: 100px;
+}
+
+/*CSS for h2*/
+h2 {
+  color: #ec823a;
+  text-decoration: underline;
+  font-family: 'Merriweather', serif;
+  font-size: 1.9rem;
+}
+
+/*CSS for h3*/
+h3 {
+  color: #ec823a;
+  text-decoration: underline;
+  font-family: 'Merriweather', serif;
+}
+
+/* CSS for the list items*/
+li {
+  font-size: 1.5625rem;
+}
+
+/* CSS for paragraphs*/
+p {
+  font-family: 'Roboto Slab', serif;
+}
+
+/*CSS for the unoredered lists*/
+ul {
+  font-size: 20px;
+}
+
+/*CSS for buttons */
+.button {
+  background-color: #f5b971;
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0px;
+}
+
+/*CSS for hovering over button*/
+.button:hover {
+  background-color: #ff9c71;
+}
+
+/*CSS for copyright*/
+.copyright {
+  position: relative;
+  left: 400px;
+  top: 10px;
+  display: inline-block;
+}
+
+.top_btn {
+  position: relative;
+  left: 400px;
+  top: 0px;
+  z-index: 1;
+  color: black;
+  text-decoration: none;
+}
+
+/*CSS for the footer*/
+.footer {
+  background-color: #ecb390;
+  height: 180px;
+}
+
+/* CSS FOr the instagram logo*/
+.instagram {
+  width: 40;
+  height: 40;
+  position: relative;
+  left: 40px;
+  top: 10px;
+  display: inline-block;
+  background-color: #ecb390;
+}
+
+/*Instagram 2*/
+.instagram1 {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  left: 80px;
+  top: 10px;
+  background-color: #ecb390;
+  z-index: 1;
+}
+
+/*CSS for the main heddings*/
+.main {
+  font-size: 1.7rem;
+}
+
+/*CSS for mail*/
+.mail {
+  height: 40px;
+  width: 40px;
+  background-color: #ecb390;
+  position: relative;
+  top: 10px;
+  left: 80px;
+}
+
+/*CSS for the middle container*/
+.middle {
+  height: auto;
+  margin-bottom: 30px;
+}
+
+/*CSS for navbar*/
+.btn-group {
+    border: none;
+    color: white;
+    position: fixed;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.25rem;
+    cursor: pointer;
+    z-index: 1;
+    right: 0px;
+  }
+
+/*CSS for the top container*/
+.top {
+  background-color: #f5b971;
+  height: 300px;
+   width : auto;
+}
+
+.toptbl {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*CSS for copyrights color*/
+#copyright {
+  color: black;
+}
+
+/*CSS for the description*/
+#descripthead {
+  font-size: 1.50rem;
+  font-weight: normal;
+}
+
+/*CSS for the name part*/
+#namehead {
+  color: black;
+  font-size: 4rem;
+  text-decoration: none;
+}
+
+#profile {
+  border: 0px;
+  margin-left: 0;
+}
+
+#Udemy {
+  text-decoration: underline;
+}
