@@ -1,0 +1,19 @@
+{
+  "name": "Predictive-sys Web App",
+  "short_name": "Predictive-sys Web App",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "description": "This is the progressive web application for Predictive-sys.",
+  "icons": [
+    {
+      "src": "https://www.consol.co.za/favicon.ico",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    }
+  ]
+}

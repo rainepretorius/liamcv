@@ -1,0 +1,5 @@
+Contact: mailto:raine.pretorius1@gmail.com
+Contact: mailto:raine.pretorius@pretoriusse.net
+Expires: 2030-12-31T21:59:00.000Z
+Preferred-Languages: en
+Canonical: https://liam.pretoriusse.net/.well-known/security.txt
