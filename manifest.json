@@ -1,0 +1,17 @@
+{
+  "name": "Liam Pretorius",
+  "short_name": "Liam Pretorius",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+        "src": "https://lh3.googleusercontent.com/pw/AM-JKLUncyywYtZiPlX-WXaFMUkcPr8bi7RttiL4K6gg4C8XSluU8-NFK5gZ0ZPdZY3l5Nx8kHxLIFxWAYTueF9SwaMMh-DzLw34aZLh2xkXiOsIcKMFQOXXSXc8GJO2BV0wgoyVzWrWBrKsn-zm-0AuWWqwaQ=w1052-h789-no?authuser=0",
+        "type": "image/png",
+        "sizes": "124x124"
+      }
+  ]
+}
