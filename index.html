@@ -77,6 +77,25 @@
 <!-- End OneSignal-->
 
   <style>
+    body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        
+        iframe {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    
     /* cyrillic-ext */
     @font-face {
       font-family: 'Lora';
@@ -1557,9 +1576,9 @@
                     <h4 id="section-my-life-slogan" class="s123-page-slogan"></h4>
                   </div>
                 </div>
-                <div class="row text-center">
-                  <iframe src="https://www.youtube.com/embed/SSaOdSs6iDA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+                <div class="video-container">
+                  <iframe id="videoPlayer" src="https://www.youtube.com/embed/SSaOdSs6iDA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
               </div>
             </div>
           </div>
@@ -1926,6 +1945,33 @@
   </div>
   <script src="https://cdn-cms-s.f-static.net/files/vendor/magic-button/front/js/magic-button-min.js?v=r7121" crossorigin="anonymous" defer></script><!-- Pjax Helper -->
   <div class="s123-front-last-element hidden"></div>
+  <script>
+        const iframe = document.getElementById('videoPlayer');
+        const videoContainer = document.querySelector('.video-container');
+        
+        iframe.addEventListener('load', () => {
+            const player = new YT.Player(iframe, {
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+            
+            function onPlayerStateChange(event) {
+                if (event.data === YT.PlayerState.PLAYING) {
+                    videoContainer.style.position = 'fixed';
+                    videoContainer.style.top = '0';
+                    videoContainer.style.left = '0';
+                    videoContainer.style.width = '100%';
+                    videoContainer.style.height = '100%';
+                } else {
+                    videoContainer.style.position = 'relative';
+                    videoContainer.style.width = '100%';
+                    videoContainer.style.height = 'auto';
+                }
+            }
+        });
+    </script>
+    <script src="https://www.youtube.com/iframe_api"></script>
 </body>
 
 </html>
