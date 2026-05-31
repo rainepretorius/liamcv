@@ -1,11 +1,7 @@
-Sitemap:https://liam.pretoriusse.net/sitemap.xml
+Sitemap: https://liam.pretoriusse.net/sitemap.xml
 
 User-agent: *
 Allow: /
-Allow: /about-me
-
-
-disallow: /offline.html
-disallow: /sw.js
-disallow: /manifest.json
-disallow: /comments
+Disallow: /offline.html
+Disallow: /sw.js
+Disallow: /manifest.json
