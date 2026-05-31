@@ -1820,6 +1820,106 @@
     .global_footer a { transition: color 0.3s ease; }
     .global_footer .footer_2 .part1 div { color: rgba(255,255,255,0.6); }
 
+    /* ── SHARE / ACTION BUTTONS ─────────────── */
+
+    /* Nav share & email icons — white in BOTH states */
+    #mainNav .navActions > li > a .svg-m,
+    #mainNav .navActions > li > a:focus .svg-m,
+    #mainNav.affix .navActions > li > a .svg-m,
+    #mainNav.affix .navActions > li > a:focus .svg-m {
+      background-color: rgba(255,255,255,0.72) !important;
+      transition: background-color 0.25s ease;
+    }
+    #mainNav .navActions > li > a:hover .svg-m,
+    #mainNav.affix .navActions > li > a:hover .svg-m {
+      background-color: #fff !important;
+    }
+
+    /* Nav action button wrapper background on hover */
+    #mainNav .navActions > li > a.actionButton {
+      border-radius: 8px;
+      transition: background 0.25s ease;
+    }
+    #mainNav .navActions > li > a.actionButton:hover {
+      background: rgba(255,255,255,0.1) !important;
+    }
+
+    /* Popovers (share/email dropdown from nav) */
+    .s123-popover,
+    [id^="popupFloatDiv"] .popover-content,
+    .popover_icons,
+    .popover_email_icons,
+    .popover_phone_icons {
+      background: rgba(5, 18, 14, 0.97) !important;
+      backdrop-filter: blur(20px) !important;
+      -webkit-backdrop-filter: blur(20px) !important;
+      border: 1px solid rgba(45,140,126,0.22) !important;
+      border-radius: 14px !important;
+      box-shadow: 0 12px 48px rgba(0,0,0,0.55) !important;
+      color: #fff !important;
+    }
+    .popover_icons .social-icons a,
+    .popover_email_icons a {
+      color: rgba(255,255,255,0.8) !important;
+    }
+
+    /* ── FLOATING MAGIC SHARE BUTTON ────────── */
+
+    /* Main floating button — warm gold to match Liam's warmth */
+    .all-magic-buttons .m-btn-c .magic-btn,
+    .all-magic-buttons .m-btn-c .magic-btn.btn-primary {
+      background: var(--liam-gold) !important;
+      box-shadow: 0 4px 22px rgba(201,164,92,0.45),
+                  0 2px 8px rgba(0,0,0,0.3) !important;
+      transition: transform 0.3s var(--ease),
+                  box-shadow 0.3s ease !important;
+      border: none !important;
+    }
+    .all-magic-buttons .m-btn-c .magic-btn:hover {
+      transform: scale(1.1) !important;
+      box-shadow: 0 8px 36px rgba(201,164,92,0.6),
+                  0 4px 16px rgba(0,0,0,0.35) !important;
+    }
+
+    /* Icon inside the floating button — use local share.svg */
+    .all-magic-buttons .m-btn-c .magic-btn .svg-m,
+    .all-magic-buttons .m-btn-c .magic-btn a .svg-m {
+      display: block !important;
+      width: 52% !important;
+      height: 52% !important;
+      background-color: #fff !important;
+      mask: url('/share.svg') center / contain no-repeat !important;
+      -webkit-mask: url('/share.svg') center / contain no-repeat !important;
+    }
+
+    /* Expanded social options (Facebook, WhatsApp, Gmail) */
+    .all-magic-buttons .m-btn-c .options-list .list-item {
+      box-shadow: 0 4px 18px rgba(0,0,0,0.35),
+                  0 0 0 2px rgba(255,255,255,0.08) !important;
+      transition: transform 0.25s var(--ease),
+                  box-shadow 0.25s ease !important;
+    }
+    .all-magic-buttons .m-btn-c .options-list .list-item:hover {
+      transform: scale(1.12) !important;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.45) !important;
+    }
+
+    /* Greeter popup box */
+    .m-btn-c .g-m-c {
+      background: rgba(5,18,14,0.97) !important;
+      border: 1px solid rgba(45,140,126,0.22) !important;
+      border-radius: 12px !important;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.5) !important;
+    }
+    .m-btn-c .g-m-c .g-m-body,
+    .m-btn-c .g-m-c .g-m-body p {
+      color: rgba(255,255,255,0.85) !important;
+    }
+    .m-btn-c .g-m-c::before,
+    .m-btn-c .g-m-c::after {
+      border-top-color: rgba(5,18,14,0.97) !important;
+    }
+
     /* ── MOBILE ──────────────────────────────── */
     @media (max-width: 767px) {
       #section-56f3eb72d06d1 .separateImages img {
@@ -1851,7 +1951,7 @@
               <!-- Multi Currency -->
               <!-- Show Header Social -->
               <li class="header-social-wrapper "><a data-close-location="right" class="actionButton" role="button" data-container="body" data-toggle="social_menuCallActionIcons"><i class="svg-m s123-icon-converter " data-icon-name="share-alt"
-                    style=" mask: url('https://cdn1.pretoriusse.net/CDN/Images/share-alt.svg?v=2'); -webkit-mask: url('https://cdn1.pretoriusse.net/CDN/Images/share-alt.svg?v=2');" data-ie11-classes="">&nbsp;</i></a></li>
+                    style=" mask: url('/share.svg') center/contain no-repeat; -webkit-mask: url('/share.svg') center/contain no-repeat;" data-ie11-classes="">&nbsp;</i></a></li>
               <!-- Cart -->
               <!-- Show Header Email With Style -->
               <li class="header-email-wrapper" data-style="1"><a data-close-location="right" class="actionButton" role="button" data-container="body" data-toggle="email_menuCallActionIcons"><i class="svg-m s123-icon-converter "
